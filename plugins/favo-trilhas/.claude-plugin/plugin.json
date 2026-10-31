@@ -1,0 +1,10 @@
+{
+  "name": "favo-trilhas",
+  "description": "Para quem segue as trilhas do Ako: proximo-passo (lê onde você está na trilha Primeiros passos em TI ou num mapa de área e sugere o próximo tópico, com a lição e um exercício).",
+  "version": "0.1.0",
+  "author": {
+    "name": "Rizzygo"
+  },
+  "homepage": "https://github.com/rizzygo/favos",
+  "license": "MIT"
+}
