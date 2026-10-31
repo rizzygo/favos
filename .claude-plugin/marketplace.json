@@ -1,0 +1,26 @@
+{
+  "name": "favos",
+  "owner": {
+    "name": "Rizzygo"
+  },
+  "metadata": {
+    "description": "Favos: plugins e skills abertos da Rizzygo, em português, para quem estuda e trabalha com tecnologia. Cada skill é um favo, e a colmeia é de todos."
+  },
+  "plugins": [
+    {
+      "name": "favo-estudo",
+      "source": "./plugins/favo-estudo",
+      "description": "Para quem estuda tecnologia com IA: antes-de-rodar (o que muda, como desfazer e como conferir antes de qualquer mudança), entender-antes (explica um comando, arquivo ou erro antes de rodar ou colar a correção) e estudar-junto (a IA pergunta antes de responder e pede que você explique de volta)."
+    },
+    {
+      "name": "favo-trilhas",
+      "source": "./plugins/favo-trilhas",
+      "description": "Para quem segue as trilhas do Ako: proximo-passo (lê onde você está na trilha Primeiros passos em TI ou num mapa de área e sugere o próximo tópico, com a lição e um exercício)."
+    },
+    {
+      "name": "favo-carreira",
+      "source": "./plugins/favo-carreira",
+      "description": "Para quem planeja o próximo passo na carreira: carreira-em-y (monta um plano de evolução pelo lado técnico ou pela gestão, com metas de 90 dias)."
+    }
+  ]
+}

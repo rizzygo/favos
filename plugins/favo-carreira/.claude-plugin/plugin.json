@@ -1,0 +1,10 @@
+{
+  "name": "favo-carreira",
+  "description": "Para quem planeja o próximo passo na carreira: carreira-em-y (monta um plano de evolução pelo lado técnico ou pela gestão, com metas de 90 dias).",
+  "version": "0.1.0",
+  "author": {
+    "name": "Rizzygo"
+  },
+  "homepage": "https://github.com/rizzygo/favos",
+  "license": "MIT"
+}
