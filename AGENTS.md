@@ -24,7 +24,8 @@ Leia o `SKILL.md` da skill antes de usá-la. A `description` diz quando acionar.
 - **Escreva para qualquer agente:** verbos genéricos, sem depender de nome de ferramenta do Claude. O que for específico de um agente vai marcado ("no Claude Code, ...").
 - **Nada de dado de empresa ou de pessoa** nas skills. Este repositório é público.
 - **Não invente fonte:** link, curso ou número só entra depois de aberto e conferido. Material pago nunca é obrigatório.
-- **`antes-de-rodar` existe também no repositório `ako`.** Mudou aqui, mude lá, e vice-versa.
+- **A `antes-de-rodar` mora só aqui.** O repositório `ako` não guarda mais cópia: o guia e o site apontam para este repositório.
+- **Toda skill tem uma página no Ako**, em `ako.rizzygo.com.br/favos/<skill>/` (pasta `favos/` do repositório `ako`). Skill nova ou mudança no que a skill faz: atualize a página lá também.
 - **Valide:** `python3 scripts/validar.py`.
 - Português, voz ativa, frases curtas.
 

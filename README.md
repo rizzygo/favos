@@ -14,7 +14,9 @@ Os Favos fazem parte da Iniciativa Ako, a frente gratuita da Rizzygo. As skills 
 
 Além dos plugins, a pasta [`regras/`](regras) tem um `AGENTS.md` base para copiar no seu projeto: a IA responde em português, explica antes de mudar e fecha cada mudança dizendo como desfazer.
 
-O índice completo, com o que cada skill faz e quando acionar, está no [`AGENTS.md`](AGENTS.md).
+O índice completo, com o que cada skill faz e quando acionar, está no [`AGENTS.md`](AGENTS.md). Para ver cada skill com exemplos e botão de copiar, abra a [página dos Favos no Ako](https://ako.rizzygo.com.br/favos/).
+
+A `antes-de-rodar` tem um [README próprio](plugins/favo-estudo/skills/antes-de-rodar/README.md), com a instalação em cada ferramenta, três exemplos e o resultado do teste com e sem a skill.
 
 ## Instalar
 
