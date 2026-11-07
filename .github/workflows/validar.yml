@@ -21,6 +21,8 @@ jobs:
         env:
           TERMOS_PROIBIDOS: ${{ secrets.TERMOS_PROIBIDOS }}
         run: python3 scripts/validar.py
+      - name: Prompts em dia com as skills
+        run: python3 scripts/gerar_prompts.py --conferir
       - name: Shell
         run: shellcheck scripts/*.sh
       - name: YAML
