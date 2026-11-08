@@ -1,5 +1,7 @@
 # Favos
 
+<img src="imagens/zumi.png" alt="Zumi, a abelha da Rizzygo All" width="72" align="right">
+
 Plugins e skills abertos da [Rizzygo](https://github.com/rizzygo), em português, para quem estuda e trabalha com tecnologia usando IA. Cada skill é um favo, e a colmeia é de todos.
 
 Os Favos fazem parte da Rizzygo All, a parte aberta e gratuita da Rizzygo, ao lado das trilhas do [Ako](https://ako.rizzygo.com.br/trilhas/). As skills seguem o formato aberto **Agent Skills** (`SKILL.md`): foram escritas para o Claude Code e funcionam em outros agentes que leem esse formato ou aceitam um arquivo de instruções.
@@ -74,4 +76,4 @@ Tem uma skill que ajudou nos seus estudos ou no trabalho? Proponha um favo. O pa
 
 ## Licença
 
-[MIT](LICENSE).
+[MIT](LICENSE). O nome Rizzygo, o logo e a Zumi são marcas da Rizzygo e ficam fora dessa licença.
