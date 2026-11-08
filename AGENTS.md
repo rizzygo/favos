@@ -26,7 +26,8 @@ Leia o `SKILL.md` da skill antes de usá-la. A `description` diz quando acionar.
 - **Não invente fonte:** link, curso ou número só entra depois de aberto e conferido. Material pago nunca é obrigatório.
 - **A `antes-de-rodar` mora só aqui.** O repositório `ako` não guarda mais cópia: o guia e o site apontam para este repositório.
 - **Toda skill tem uma página no Ako**, em `ako.rizzygo.com.br/favos/<skill>/` (pasta `favos/` do repositório `ako`). Skill nova ou mudança no que a skill faz: atualize a página lá também.
-- **Valide:** `python3 scripts/validar.py`.
+- **Prompts para colar em qualquer IA** ficam em `prompts/` e saem do `SKILL.md` por `python3 scripts/gerar_prompts.py`. O botão "Estudar com IA" do Ako baixa esses arquivos. Mudou uma skill que tem prompt: rode o script e faça commit do resultado.
+- **Valide:** `python3 scripts/validar.py` e `python3 scripts/gerar_prompts.py --conferir`.
 - Português, voz ativa, frases curtas.
 
 ## Commits
