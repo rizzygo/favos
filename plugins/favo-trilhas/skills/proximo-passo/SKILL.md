@@ -1,6 +1,6 @@
 ---
 name: proximo-passo
-description: Use quando a pessoa perguntar o que estudar agora, por onde continuar, qual o próximo tópico ou como está o progresso dela nas trilhas da Rizzygo Ako (Primeiros passos em TI e mapas das áreas). Lê a trilha publicada e o progresso que a pessoa informar ou exportar, e sugere um próximo tópico com a lição, o exercício e o tempo estimado.
+description: Use quando a pessoa perguntar o que estudar agora, por onde continuar, qual o próximo tópico ou como está o progresso dela nas trilhas da Rizzygo Ako (Primeiros passos em TI, Platform Engineering e mapas das áreas). Lê a trilha publicada e o progresso que a pessoa informar ou exportar, e sugere um próximo tópico com a lição, o exercício e o tempo estimado.
 ---
 
 # Próximo passo
@@ -14,15 +14,16 @@ Leia os dados publicados do Ako. Se o seu agente tiver acesso à internet, baixe
 | Arquivo | O que tem |
 |---|---|
 | https://raw.githubusercontent.com/rizzygo/ako/main/trilhas/dados/primeiros-passos.json | A trilha Primeiros passos em TI: `etapas` em ordem, `topicos` (com `etapa`, `horas`, `resumo`, `checklist`, `recursos`) e `areas` |
+| https://raw.githubusercontent.com/rizzygo/ako/main/trilhas/dados/platform-engineering.json | A trilha Platform Engineering, para quem já tem a base de infraestrutura: mesmos campos da Primeiros passos, sem `areas`. Abre em `https://ako.rizzygo.com.br/trilhas/?trilha=platform-engineering` |
 | https://raw.githubusercontent.com/rizzygo/ako/main/trilhas/dados/mapas.json | Os mapas das áreas (infra, dev, dados, qa, seguranca, produto): `mapas[].secoes[].nos[]`, cada nó com `titulo`, `resumo`, `nivel`, `pratica`, `licao` e `topico` (quando liga a um tópico da trilha) |
 
-Não invente tópico, lição ou link: use só o que está nesses arquivos. As lições ficam em `https://ako.rizzygo.com.br/trilhas/materiais/<licao>`.
+Não invente tópico, lição ou link: use só o que está nesses arquivos. As lições ficam em `https://ako.rizzygo.com.br/trilhas/materiais/<licao>`. O link de um tópico é `https://ako.rizzygo.com.br/trilhas/#/t/<id>` na Primeiros passos e `https://ako.rizzygo.com.br/trilhas/?trilha=platform-engineering#/t/<id>` na Platform Engineering.
 
 ## 2. Descubra onde a pessoa está
 
 Pergunte, nesta ordem, e pare assim que tiver o suficiente:
 
-1. **Ela tem o arquivo de progresso?** Na página de conquistas do site dá para exportar um `progresso-trilhas-rizzygo-<data>.json`. Nele, `topicos` traz cada tópico iniciado, com `check` (itens do checklist marcados), `quiz` (resultado do desafio) e `ensinei`. `caminho` é a área escolhida no fim da trilha.
+1. **Ela tem o arquivo de progresso?** Na página de conquistas de cada trilha dá para exportar um arquivo de progresso: `progresso-primeiros-passos-rizzygo-<data>.json` ou `progresso-platform-engineering-rizzygo-<data>.json` (arquivos antigos da Primeiros passos se chamam `progresso-trilhas-rizzygo-<data>.json`). Cada trilha tem o seu arquivo; o nome diz de qual é. Nele, `topicos` traz cada tópico iniciado, com `check` (itens do checklist marcados), `quiz` (resultado do desafio) e `ensinei`. `caminho` é a área escolhida no fim da trilha.
 2. **Se não tiver:** quais tópicos ela já estudou, ou em que etapa parou.
 3. **Quanto tempo tem por semana** para estudar.
 
@@ -32,6 +33,7 @@ O arquivo de progresso só fica com a pessoa. Não peça para ela publicar nem m
 
 - **Ainda na trilha Primeiros passos:** o primeiro tópico, na ordem das `etapas`, que não foi concluído. Um tópico começado e não terminado vem antes de um novo.
 - **Terminou a trilha:** vá para o mapa da área em `caminho`, ou pergunte qual área interessa. Sugira o primeiro nó `essencial` que ela ainda não estudou, na ordem das seções.
+- **Interesse em infraestrutura, DevOps ou SRE, com a base do mapa de infra feita:** sugira a trilha Platform Engineering. Dentro dela, vale a mesma regra: o primeiro tópico não concluído, na ordem das `etapas`.
 - **Mais de uma opção boa:** mostre no máximo duas e diga o que diferencia cada uma.
 
 ## 4. Entregue o próximo passo

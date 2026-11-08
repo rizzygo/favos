@@ -20,7 +20,7 @@ A `antes-de-rodar` tem um [README próprio](plugins/favo-estudo/skills/antes-de-
 
 ## Sem instalar nada: o botão "Estudar com IA" do Ako
 
-Cada tópico da [trilha Primeiros passos do Ako](https://ako.rizzygo.com.br/trilhas/) tem um botão que copia um prompt pronto para o ChatGPT, o Claude, o Gemini ou outra IA, até pelo celular. O prompt junta o método da `estudar-junto` com o conteúdo do tópico. O método sai de [`prompts/estudar-junto.txt`](prompts/estudar-junto.txt), gerado do `SKILL.md` por `scripts/gerar_prompts.py`.
+Cada tópico das [trilhas do Ako](https://ako.rizzygo.com.br/trilhas/) tem um botão que copia um prompt pronto para o ChatGPT, o Claude, o Gemini ou outra IA, até pelo celular. O prompt junta o método da `estudar-junto` com o conteúdo do tópico. O método sai de [`prompts/estudar-junto.txt`](prompts/estudar-junto.txt), gerado do `SKILL.md` por `scripts/gerar_prompts.py`.
 
 ## Instalar
 
