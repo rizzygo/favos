@@ -1,7 +1,7 @@
 {
   "name": "favo-estudo",
   "description": "Para quem estuda tecnologia com IA: antes-de-rodar (o que muda, como desfazer e como conferir antes de qualquer mudança), entender-antes (explica um comando, arquivo ou erro antes de rodar ou colar a correção) e estudar-junto (a IA pergunta antes de responder e pede que você explique de volta).",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "Rizzygo"
   },
