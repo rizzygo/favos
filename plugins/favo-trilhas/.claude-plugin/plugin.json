@@ -1,6 +1,6 @@
 {
   "name": "favo-trilhas",
-  "description": "Para quem segue as trilhas do Ako: proximo-passo (lê onde você está na trilha Primeiros passos em TI ou num mapa de área e sugere o próximo tópico, com a lição e um exercício).",
+  "description": "Para quem segue as trilhas do Ako: proximo-passo (lê onde você está nas trilhas Primeiros passos em TI e Platform Engineering ou num mapa de área e sugere o próximo tópico, com a lição e um exercício).",
   "version": "0.1.0",
   "author": {
     "name": "Rizzygo"
