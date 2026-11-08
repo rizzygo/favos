@@ -2,7 +2,7 @@
 
 Plugins e skills abertos da [Rizzygo](https://github.com/rizzygo), em português, para quem estuda e trabalha com tecnologia usando IA. Cada skill é um favo, e a colmeia é de todos.
 
-Os Favos fazem parte da Iniciativa Ako, a frente gratuita da Rizzygo. As skills seguem o formato aberto **Agent Skills** (`SKILL.md`): foram escritas para o Claude Code e funcionam em outros agentes que leem esse formato ou aceitam um arquivo de instruções.
+Os Favos fazem parte da Rizzygo All, a parte aberta e gratuita da Rizzygo, ao lado das trilhas do [Ako](https://ako.rizzygo.com.br/trilhas/). As skills seguem o formato aberto **Agent Skills** (`SKILL.md`): foram escritas para o Claude Code e funcionam em outros agentes que leem esse formato ou aceitam um arquivo de instruções.
 
 ## Os plugins
 

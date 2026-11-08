@@ -4,7 +4,7 @@ Este arquivo vale para qualquer agente (Claude Code, Codex, Gemini CLI, GitHub C
 
 ## O que é este repositório
 
-O **favos** guarda as skills abertas da Rizzygo, no formato Agent Skills, agrupadas em plugins por público. Cada skill é uma pasta com `SKILL.md` (frontmatter `name` e `description`, depois o procedimento). Faz parte da Iniciativa Ako: conteúdo gratuito, em português.
+O **favos** guarda as skills abertas da Rizzygo, no formato Agent Skills, agrupadas em plugins por público. Cada skill é uma pasta com `SKILL.md` (frontmatter `name` e `description`, depois o procedimento). Faz parte da Rizzygo All, a parte aberta e gratuita da Rizzygo, ao lado do Ako: conteúdo gratuito, em português.
 
 ## Índice das skills
 
