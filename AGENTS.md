@@ -27,8 +27,18 @@ Leia o `SKILL.md` da skill antes de usá-la. A `description` diz quando acionar.
 - **A `antes-de-rodar` mora só aqui.** O repositório `ako` não guarda mais cópia: o guia e o site apontam para este repositório.
 - **Toda skill tem uma página no Ako**, em `ako.rizzygo.com.br/favos/<skill>/` (pasta `favos/` do repositório `ako`). Skill nova ou mudança no que a skill faz: atualize a página lá também.
 - **Prompts para colar em qualquer IA** ficam em `prompts/` e saem do `SKILL.md` por `python3 scripts/gerar_prompts.py`. O botão "Estudar com IA" do Ako baixa esses arquivos. Mudou uma skill que tem prompt: rode o script e faça commit do resultado.
-- **Valide:** `python3 scripts/validar.py` e `python3 scripts/gerar_prompts.py --conferir`.
+- **Decisões difíceis de desfazer** viram um arquivo em [`decisoes/`](decisoes/), no [modelo](regras/modelo-adr.md).
 - Português, voz ativa, frases curtas.
+
+## Comandos
+
+```sh
+python3 scripts/validar.py                # SKILL.md, plugins, links e termos proibidos
+python3 scripts/gerar_prompts.py          # gera prompts/ a partir dos SKILL.md
+python3 scripts/gerar_prompts.py --conferir   # confere se prompts/ está em dia (o CI roda este)
+```
+
+O CI (`.github/workflows/validar.yml`) também roda `shellcheck scripts/*.sh` e `yamllint`.
 
 ## Commits
 
