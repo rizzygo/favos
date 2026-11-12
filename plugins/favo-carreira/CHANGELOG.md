@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/rizzygo/favos/compare/favo-carreira-v0.2.0...favo-carreira-v0.3.0) (2026-11-12)
+
+
+### Novidades
+
+* **favo-carreira:** skill entender-o-problema, modelos de spec, ADR e AGENTS.md ([#8](https://github.com/rizzygo/favos/issues/8)) ([3600410](https://github.com/rizzygo/favos/commit/3600410202bb72c555e396306fe3a40715f41782))
+
 ## [0.2.0](https://github.com/rizzygo/favos/compare/favo-carreira-v0.1.0...favo-carreira-v0.2.0) (2026-11-08)
 
 

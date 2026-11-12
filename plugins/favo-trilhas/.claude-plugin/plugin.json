@@ -1,7 +1,7 @@
 {
   "name": "favo-trilhas",
   "description": "Para quem segue as trilhas do Ako: proximo-passo (lê onde você está nas trilhas do Ako (Primeiros passos em TI, Platform Engineering, Desenvolvimento e Habilidades humanas) ou num mapa de área e sugere o próximo tópico, com a lição e um exercício).",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "Rizzygo"
   },
