@@ -34,12 +34,15 @@ Leia o `SKILL.md` da skill antes de usá-la. A `description` diz quando acionar.
 ## Comandos
 
 ```sh
-python3 scripts/validar.py                # SKILL.md, plugins, links e termos proibidos
+scripts/validar                           # tudo que o CI roda: skills, prompts, shell, YAML, segredos, AGENTS.md
 python3 scripts/gerar_prompts.py          # gera prompts/ a partir dos SKILL.md
-python3 scripts/gerar_prompts.py --conferir   # confere se prompts/ está em dia (o CI roda este)
 ```
 
-O CI (`.github/workflows/validar.yml`) também roda `shellcheck scripts/*.sh` e `yamllint`.
+O CI (`.github/workflows/validar.yml`) chama o mesmo `scripts/validar` e roda também o `markdownlint`. Local, o `shellcheck` e o `yamllint` são pulados com aviso se não estiverem instalados.
+
+## Git e segredos
+
+Nada de `git push --force` nem push direto na `main`. Não leia nem versione arquivo de token, `.env` ou chave. No Claude Code, o `.claude/settings.json` já nega isso; o `scripts/segredos.py` barra no CI.
 
 ## Commits
 

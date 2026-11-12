@@ -30,6 +30,5 @@ O release-please lê o tipo e o escopo do commit para versionar cada plugin.
 ## Antes do PR
 
 ```bash
-python3 scripts/validar.py
-shellcheck scripts/*.sh
+scripts/validar   # o mesmo que o CI roda
 ```

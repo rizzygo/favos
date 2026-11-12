@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Este repositório não publica site, então não tem prévia visual.
+# O verbo existe em todo repositório da Rizzygo para o agente não precisar adivinhar.
+echo "Sem prévia: as skills aparecem no Ako, em ako.rizzygo.com.br/favos/<skill>/ (repositório ako). Para testar uma skill, copie-a para o seu agente: scripts/instalar.sh."
