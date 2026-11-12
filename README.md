@@ -12,7 +12,7 @@ Os Favos fazem parte da Rizzygo All, a parte aberta e gratuita da Rizzygo, ao la
 |---|---|---|
 | **`favo-estudo`** | Quem estuda tecnologia com IA | `antes-de-rodar` · `entender-antes` · `estudar-junto` |
 | **`favo-trilhas`** | Quem segue as [trilhas do Ako](https://ako.rizzygo.com.br/trilhas/) | `proximo-passo` |
-| **`favo-carreira`** | Quem planeja o próximo passo na carreira | `carreira-em-y` |
+| **`favo-carreira`** | Quem planeja o próximo passo na carreira | `carreira-em-y` · `entender-o-problema` |
 
 Além dos plugins, a pasta [`regras/`](regras) tem um `AGENTS.md` base para copiar no seu projeto: a IA responde em português, explica antes de mudar e fecha cada mudança dizendo como desfazer.
 

@@ -15,15 +15,17 @@ Leia os dados publicados do Ako. Se o seu agente tiver acesso à internet, baixe
 |---|---|
 | https://raw.githubusercontent.com/rizzygo/ako/main/trilhas/dados/primeiros-passos.json | A trilha Primeiros passos em TI: `etapas` em ordem, `topicos` (com `etapa`, `horas`, `resumo`, `checklist`, `recursos`) e `areas` |
 | https://raw.githubusercontent.com/rizzygo/ako/main/trilhas/dados/platform-engineering.json | A trilha Platform Engineering, para quem já tem a base de infraestrutura: mesmos campos da Primeiros passos, sem `areas`. Abre em `https://ako.rizzygo.com.br/trilhas/?trilha=platform-engineering` |
+| https://raw.githubusercontent.com/rizzygo/ako/main/trilhas/dados/desenvolvimento.json | A trilha Desenvolvimento, para quem escolheu programar: mesmos campos, sem `areas`. Termina no projeto "Qual é o B.O.?". Abre em `https://ako.rizzygo.com.br/trilhas/?trilha=desenvolvimento` |
+| https://raw.githubusercontent.com/rizzygo/ako/main/trilhas/dados/habilidades-humanas.json | A trilha Habilidades humanas, que cruza todas as outras: comunicação, feedback, emoção sob pressão, prioridade e ensino. Os tópicos têm `alturas`, uma pergunta por cargo (Júnior a Gestão). Abre em `https://ako.rizzygo.com.br/trilhas/?trilha=habilidades-humanas` |
 | https://raw.githubusercontent.com/rizzygo/ako/main/trilhas/dados/mapas.json | Os mapas das áreas (infra, dev, dados, qa, seguranca, produto): `mapas[].secoes[].nos[]`, cada nó com `titulo`, `resumo`, `nivel`, `pratica`, `licao` e `topico` (quando liga a um tópico da trilha) |
 
-Não invente tópico, lição ou link: use só o que está nesses arquivos. As lições ficam em `https://ako.rizzygo.com.br/trilhas/materiais/<licao>`. O link de um tópico é `https://ako.rizzygo.com.br/trilhas/#/t/<id>` na Primeiros passos e `https://ako.rizzygo.com.br/trilhas/?trilha=platform-engineering#/t/<id>` na Platform Engineering.
+Não invente tópico, lição ou link: use só o que está nesses arquivos. As lições ficam em `https://ako.rizzygo.com.br/trilhas/materiais/<licao>`. O link de um tópico é `https://ako.rizzygo.com.br/trilhas/#/t/<id>` na Primeiros passos e `https://ako.rizzygo.com.br/trilhas/?trilha=<id-da-trilha>#/t/<id>` nas outras (platform-engineering, desenvolvimento, habilidades-humanas). Se a pessoa trava na parte humana (pedir ajuda, feedback, prioridade, pressão), sugira o tópico da Habilidades humanas, seja qual for a trilha dela.
 
 ## 2. Descubra onde a pessoa está
 
 Pergunte, nesta ordem, e pare assim que tiver o suficiente:
 
-1. **Ela tem o arquivo de progresso?** Na página de conquistas de cada trilha dá para exportar um arquivo de progresso: `progresso-primeiros-passos-rizzygo-<data>.json` ou `progresso-platform-engineering-rizzygo-<data>.json` (arquivos antigos da Primeiros passos se chamam `progresso-trilhas-rizzygo-<data>.json`). Cada trilha tem o seu arquivo; o nome diz de qual é. Nele, `topicos` traz cada tópico iniciado, com `check` (itens do checklist marcados), `quiz` (resultado do desafio) e `ensinei`. `caminho` é a área escolhida no fim da trilha.
+1. **Ela tem o arquivo de progresso?** Na página de conquistas de cada trilha dá para exportar um arquivo de progresso: `progresso-primeiros-passos-rizzygo-<data>.json` ou `progresso-<id-da-trilha>-rizzygo-<data>.json` (como `progresso-platform-engineering-rizzygo-<data>.json`) (arquivos antigos da Primeiros passos se chamam `progresso-trilhas-rizzygo-<data>.json`). Cada trilha tem o seu arquivo; o nome diz de qual é. Nele, `topicos` traz cada tópico iniciado, com `check` (itens do checklist marcados), `quiz` (resultado do desafio) e `ensinei`. `caminho` é a área escolhida no fim da trilha.
 2. **Se não tiver:** quais tópicos ela já estudou, ou em que etapa parou.
 3. **Quanto tempo tem por semana** para estudar.
 

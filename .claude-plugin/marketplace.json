@@ -15,12 +15,12 @@
     {
       "name": "favo-trilhas",
       "source": "./plugins/favo-trilhas",
-      "description": "Para quem segue as trilhas do Ako: proximo-passo (lê onde você está nas trilhas Primeiros passos em TI e Platform Engineering ou num mapa de área e sugere o próximo tópico, com a lição e um exercício)."
+      "description": "Para quem segue as trilhas do Ako: proximo-passo (lê onde você está nas trilhas do Ako (Primeiros passos em TI, Platform Engineering, Desenvolvimento e Habilidades humanas) ou num mapa de área e sugere o próximo tópico, com a lição e um exercício)."
     },
     {
       "name": "favo-carreira",
       "source": "./plugins/favo-carreira",
-      "description": "Para quem planeja o próximo passo na carreira: carreira-em-y (monta um plano de evolução pelo lado técnico ou pela gestão, com metas de 90 dias)."
+      "description": "Para quem planeja o próximo passo na carreira: carreira-em-y (monta um plano de evolução pelo lado técnico ou pela gestão, com metas de 90 dias) e entender-o-problema (acha o problema por trás de um pedido, na altura do seu cargo, e entrega uma spec de uma página)."
     }
   ]
 }
