@@ -17,16 +17,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pyyaml yamllint
-      - name: Skills, manifestos, links e termos proibidos
+      # O mesmo script que roda local: skills, prompts, shell, YAML, segredos e AGENTS.md.
+      - run: scripts/validar
         env:
           TERMOS_PROIBIDOS: ${{ secrets.TERMOS_PROIBIDOS }}
-        run: python3 scripts/validar.py
-      - name: Prompts em dia com as skills
-        run: python3 scripts/gerar_prompts.py --conferir
-      - name: Shell
-        run: shellcheck scripts/*.sh
-      - name: YAML
-        run: yamllint -c .yamllint.yml .
       - uses: DavidAnson/markdownlint-cli2-action@v16
         with:
           globs: "**/*.md"

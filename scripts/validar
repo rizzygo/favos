@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+# Valida o repositório. O CI roda este mesmo script, então o que passa aqui passa no PR.
+# Uso: scripts/validar
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+etapa() { printf '\n== %s\n' "$1"; }
+
+# Ferramenta ausente: no CI é erro, local é aviso (o CI instala todas).
+tem() {
+  if command -v "$1" >/dev/null 2>&1; then return 0; fi
+  if [ -n "${CI:-}" ]; then echo "falta $1 no CI"; exit 1; fi
+  echo "aviso: $1 não está instalado, pulei. O CI roda esta etapa."
+  return 1
+}
+
+etapa "Skills, manifestos, links e termos proibidos"
+python3 scripts/validar.py
+
+etapa "Prompts em dia com as skills"
+python3 scripts/gerar_prompts.py --conferir
+
+etapa "Shell"
+if tem shellcheck; then shellcheck scripts/*.sh scripts/validar scripts/previa; echo ok; fi
+
+etapa "YAML"
+if tem yamllint; then yamllint -c .yamllint.yml .; echo ok; fi
+
+etapa "Segredos"
+python3 scripts/segredos.py --test
+python3 scripts/segredos.py
+
+etapa "Tamanho dos AGENTS.md"
+limite=100
+excedeu=0
+while IFS= read -r f; do
+  n=$(wc -l < "$f")
+  if [ "$n" -gt "$limite" ]; then
+    echo "$f tem $n linhas (limite: $limite). Mova a seção maior para um arquivo na fatia e deixe só o ponteiro."
+    excedeu=1
+  fi
+done < <(git ls-files '*AGENTS.md')
+[ "$excedeu" -eq 0 ] || exit 1
+echo "todos com até $limite linhas"
+
+printf '\nTudo certo.\n'
