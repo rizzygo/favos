@@ -17,6 +17,7 @@ Leia o `SKILL.md` da skill antes de usá-la. A `description` diz quando acionar.
 | `estudar-junto` | favo-estudo | Estudar um assunto perguntando, explicando em partes e pedindo a explicação de volta | [`plugins/favo-estudo/skills/estudar-junto/SKILL.md`](plugins/favo-estudo/skills/estudar-junto/SKILL.md) |
 | `proximo-passo` | favo-trilhas | Sugerir o próximo tópico nas trilhas e mapas do Ako | [`plugins/favo-trilhas/skills/proximo-passo/SKILL.md`](plugins/favo-trilhas/skills/proximo-passo/SKILL.md) |
 | `carreira-em-y` | favo-carreira | Plano de evolução pela técnica ou pela gestão, com metas de 90 dias | [`plugins/favo-carreira/skills/carreira-em-y/SKILL.md`](plugins/favo-carreira/skills/carreira-em-y/SKILL.md) |
+| `entender-o-problema` | favo-carreira | Achar o problema por trás de um pedido, na altura do cargo, e escrever uma spec de uma página | [`plugins/favo-carreira/skills/entender-o-problema/SKILL.md`](plugins/favo-carreira/skills/entender-o-problema/SKILL.md) |
 
 ## Regras para mudar este repositório
 
